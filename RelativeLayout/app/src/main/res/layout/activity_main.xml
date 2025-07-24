@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="38dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="193dp"
+        android:layout_height="118dp"
+        android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+    android:layout_marginBottom="24dp"
+        app:srcCompat="@drawable/user" />
+
+    <!-- First Name Row -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="8dp"
+    android:text="First name:"
+    android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/textView1"
+    android:layout_alignBottom="@+id/textView1"
+    android:layout_toEndOf="@id/textView1"
+    android:layout_alignParentEnd="true"
+        android:hint="Bhojraj"
+    android:padding="16dp"
+    android:inputType="textPersonName"
+    android:layout_marginStart="8dp"/>
+
+    <!-- Last Name Row -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="8dp"
+    android:text="Last name:"
+    android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@id/textView2"
+        android:layout_alignParentEnd="true"
+        android:hint="Narware"
+        android:padding="16dp"
+        android:inputType="textPersonName"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#2196F3"
+        android:text="Submit" />
+
+</RelativeLayout>
