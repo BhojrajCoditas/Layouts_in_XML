@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NavigationImplementation</string>
+    <string name="first_name">First name:</string>
+    <string name="last_name">Last name:</string>
+    <string name="narware">Narware</string>
+    <string name="submit">Submit</string>
+</resources>
